@@ -35,7 +35,9 @@ public class Main {
             new Shop("LetsSaveBig"),
             new Shop("MyFavoriteShop"),
             new Shop("BuyItAll"),
-            new Shop("ShopEasy"));
+            new Shop("ShopEasy"),
+            new Shop("revo"),
+            new Shop("ashraf"));
 
     private final Executor executor = Executors.newFixedThreadPool(shops.size(), r -> {
         Thread t = new Thread(r);
