@@ -1,4 +1,4 @@
-package org.revo.learn;
+package org.revo.RemotoConnect;
 
 import java.util.UUID;
 

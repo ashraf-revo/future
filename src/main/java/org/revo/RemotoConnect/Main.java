@@ -1,6 +1,6 @@
-package org.revo.learn;
+package org.revo.RemotoConnect;
 
-import static org.revo.learn.OperationData.execute;
+import static org.revo.RemotoConnect.OperationData.execute;
 
 /**
  * Created by ashraf on 9/3/2015.

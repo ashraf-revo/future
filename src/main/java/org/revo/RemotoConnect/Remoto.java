@@ -1,7 +1,7 @@
-package org.revo.learn;
+package org.revo.RemotoConnect;
 
-import static org.revo.learn.Util.Delay;
-import static org.revo.learn.Util.RandomContent;
+import static org.revo.RemotoConnect.Util.Delay;
+import static org.revo.RemotoConnect.Util.RandomContent;
 
 /**
  * Created by revo on 03/09/15.

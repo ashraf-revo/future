@@ -1,10 +1,10 @@
-package org.revo.learn;
+package org.revo.RemotoConnect;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-import static org.revo.learn.Data.social;
+import static org.revo.RemotoConnect.Data.social;
 
 /**
  * Created by revo on 03/09/15.
