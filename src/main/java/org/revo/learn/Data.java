@@ -1,35 +1,19 @@
 package org.revo.learn;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
- * Created by revo on 03/09/15.
+ * Created by ashraf on 9/3/2015.
  */
 public class Data {
-    private String Url;
-    private String Content;
-
-    public Data(String url, String content) {
-        Url = url;
-        Content = content;
-    }
-
-    public Data() {
-    }
-
-    public String getUrl() {
-        return Url;
-    }
-
-    public Data setUrl(String url) {
-        Url = url;
-        return this;
-    }
-
-    public String getContent() {
-        return Content;
-    }
-
-    public Data setContent(String content) {
-        Content = content;
-        return this;
-    }
+    public static List<String> social = Arrays.asList(
+            "https://www.facebook.com/",
+            "https://www.youtube.com/",
+            "https://twitter.com/",
+            "https://www.linkedin.com/",
+            "https://soundcloud.com/",
+            "https://plus.google.com/",
+            "https://www.quora.com",
+            "https://io.hsoub.com/");
 }

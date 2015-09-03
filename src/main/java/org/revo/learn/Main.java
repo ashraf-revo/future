@@ -1,25 +1,34 @@
 package org.revo.learn;
 
-import java.util.List;
-import java.util.function.Supplier;
+import static org.revo.learn.OperationData.execute;
 
 /**
- * Created by revo on 03/09/15.
+ * Created by ashraf on 9/3/2015.
  */
 public class Main {
-    static FutureImpl future = new FutureImpl();
+
 
     public static void main(String[] args) {
-        execute(() -> future.sequentialSocial());
-        execute(() -> future.parallelSocial());
-        execute(() -> future.futureSocial());
-        execute(() -> future.futureSocialExecutor());
+
+        OperationData GetDataFutureTranslate =
+                new GetDataFutureTranslateImpl();
+        OperationData GetDataFutureImpl =
+                new GetDataFutureImpl();
+
+
+        Apply("GetDataFuture", GetDataFutureImpl);
+        Apply("DataFutureTranslate", GetDataFutureTranslate);
+
     }
 
-    private static void execute(Supplier<List<Data>> f) {
-        long start = System.currentTimeMillis();
-        f.get();
-        long end = System.currentTimeMillis();
-        System.out.println("******************************************************" + (end - start));
+    public static void Apply(String from, OperationData operationData) {
+        System.out.println("*********    " + from + "    *********");
+        execute("sequentialSocial", () -> operationData.sequentialSocial());
+        execute("parallelSocial", () -> operationData.parallelSocial());
+        execute("futureSocial", () -> operationData.futureSocial());
+        execute("futureSocialExecutor", () -> operationData.futureSocialExecutor());
+        System.out.println("*********                                *********\n\n\n\n");
     }
+
+
 }

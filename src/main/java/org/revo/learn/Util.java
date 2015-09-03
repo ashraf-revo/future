@@ -13,7 +13,6 @@ public class Util {
             e.printStackTrace();
         }
     }
-
     public static String RandomContent() {
         return UUID.randomUUID().toString().replace("-", "");
     }

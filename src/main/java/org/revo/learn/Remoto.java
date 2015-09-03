@@ -1,13 +1,20 @@
 package org.revo.learn;
 
-import static org.revo.learn.Util.*;
+import static org.revo.learn.Util.Delay;
+import static org.revo.learn.Util.RandomContent;
 
 /**
  * Created by revo on 03/09/15.
  */
 public class Remoto {
-    public static Data getData(String Url) {
+    public static Site getData(String Url) {
         Delay();
-        return new Data(Url, RandomContent());
+        return new Site(Url, RandomContent());
     }
+
+    public static Site Translate(Site site) {
+        Delay();
+        return site.setContent(RandomContent());
+    }
+
 }
