@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-import static org.revo.RemotoConnect.Data.social;
 
 /**
  * Created by ashraf on 9/3/2015.

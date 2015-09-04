@@ -11,23 +11,6 @@ public class Site {
         Url = url;
         Content = content;
     }
-
-    public Site() {
-    }
-
-    public String getUrl() {
-        return Url;
-    }
-
-    public Site setUrl(String url) {
-        Url = url;
-        return this;
-    }
-
-    public String getContent() {
-        return Content;
-    }
-
     public Site setContent(String content) {
         Content = content;
         return this;

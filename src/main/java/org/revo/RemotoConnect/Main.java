@@ -9,18 +9,10 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-        OperationData GetDataFutureTranslate =
-                new GetDataFutureTranslateImpl();
-        OperationData GetDataFutureImpl =
-                new GetDataFutureImpl();
-
-
-        Apply("GetDataFuture", GetDataFutureImpl);
-        Apply("DataFutureTranslate", GetDataFutureTranslate);
+        Apply("GetDataFuture",  new GetDataFutureImpl());
+        Apply("DataFutureTranslate", new GetDataFutureTranslateImpl());
 
     }
-
     public static void Apply(String from, OperationData operationData) {
         System.out.println("*********    " + from + "    *********");
         execute("sequentialSocial", () -> operationData.sequentialSocial());
